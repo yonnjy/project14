@@ -5,210 +5,749 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>계명문화대학교</title>
+
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
+    <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/style.css">
 
     <script src="./js/jquery-1.12.4.min.js"></script>
-    <script src="./js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="./js/slick.min.js"></script>
     <script src="./js/custom.js"></script>
 </head>
 
 <body>
     <div class="wrap">
-        <header class="header"></header>
+        <header class="header">
+            <div class="h_top">
+                <div class="inner h_wrap">
+                    <ol>
+                        <li><a href="">대학뉴스</a></li>
+                        <li><a href="">취업정보</a></li>
+                    </ol>
+                    <ul>
+                        <li><a href="">KHUB 큐브포털</a></li>
+                        <li><a href="">원격지원</a></li>
+                        <li><a href="">로그인</a></li>
+                        <li>
+                            <span class="material-symbols-outlined search">search</span>
+                        </li>
+                        <li>
+                            <div class="lang">
+                                <span class="material-symbols-outlined">public</span>
+                                <div class="language">
+                                    <div class="en">
+                                        <a href="">
+                                            <img src="./images/language01.png" alt="">
+                                            <span>EN</span>
+                                        </a>
+                                    </div>
+                                    <div class="ch">
+                                        <a href="">
+                                            <img src="./images/language02.png" alt="">
+                                            <span>CH</span>
+                                        </a>
+                                    </div>
+                                    <div class="jp">
+                                        <a href="">
+                                            <img src="./images/language03.png" alt="">
+                                            <span>JP</span>
+                                        </a>
+                                    </div>
+                                    <div class="vt">
+                                        <a href="">
+                                            <img src="./images/language04.png" alt="">
+                                            <span>VT</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="h_bott">
+                <div class="inner">
+                    <h1>
+                        <a href="/">
+                            <img src="./images/logo_b.png" alt="계명문화대학교">
+                        </a>
+                    </h1>
+                    <nav class="gnb">
+                        <ul>
+                            <li><span>KMCU</span>
+                                <div class="sub_box">
+                                    <div class="inner sub_inn">
+                                        <strong>KMCU</strong>
+                                        <div class="sub_wrap">
+                                            <dl class="sub">
+                                                <dt>인사말</dt>
+                                                <dd><a href="">총장 인사말</a></dd>
+                                                <dd><a href="">취임사</a></dd>
+                                                <dd><a href="">역대총장</a></dd>
+                                                <dd><a href="">조직도</a></dd>
+                                            </dl>
+                                            <dl class="sub">
+                                                <dt>학교법인</dt>
+                                                <dd><a href="">이사회</a></dd>
+                                                <dd><a href="">법인조직</a></dd>
+                                                <dd><a href="">대학기관</a></dd>
+                                                <dd><a href="">규정집</a></dd>
+                                            </dl>
+                                            <dl class="sub">
+                                                <dt>공시 &middot; 공고</dt>
+                                                <dd><a href="">정보공개법</a></dd>
+                                                <dd><a href="">개인정보 공시</a></dd>
+                                                <dd><a href="">협약체결현황</a></dd>
+                                                <dd><a href="">예결산 공고</a></dd>
+                                            </dl>
+                                            <dl class="sub">
+                                                <dt>발전계획</dt>
+                                                <dd><a href="">KMCU 2025</a></dd>
+                                                <dd><a href="">학과(부)발전계획</a></dd>
+                                                <dd><a href="">공지사항</a></dd>
+                                                <dd><a href="">업무추진비</a></dd>
+                                            </dl>
+                                            <dl class="sub">
+                                                <dt>대학상징 &middot; 홍보</dt>
+                                                <dd><a href="">상징물</a></dd>
+                                                <dd><a href="">교가</a></dd>
+                                                <dd><a href="">대학UI</a></dd>
+                                                <dd><a href="">언론에비친 대학</a></dd>
+                                                <dd><a href="">비디오 &#47; 화보</a></dd>
+                                            </dl>
+                                            <dl class="sub">
+                                                <dt>캠퍼스 안내</dt>
+                                                <dd><a href="">캠퍼스 맵</a></dd>
+                                                <dd><a href="">VR투어</a></dd>
+                                                <dd><a href="">교내 연락처</a></dd>
+                                                <dd><a href="">오시는 길</a></dd>
+                                            </dl>
+                                            <dl class="sub">
+                                                <dt>KMCU</dt>
+                                                <dd><a href="">교육체계</a></dd>
+                                                <dd><a href="">대학연혁</a></dd>
+                                                <dd><a href="">대학안전경영</a></dd>
+                                                <dd><a href="">교직원 행동강령</a></dd>
+                                            </dl>
+                                            <dl class="sub">
+                                                <dt>대학현황</dt>
+                                                <dd><a href="">대학자체평가</a></dd>
+                                                <dd><a href="">혁신지원사업</a></dd>
+                                                <dd><a href="">대학평의원회 회의록</a></dd>
+                                                <dd><a href="">등록금심의위원회 회의록</a></dd>
+                                                <dd><a href="">고등직업교육거점지구사업</a></dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><span>학과안내</span>
+                                <div class="sub_box">
+                                    <div class="inner sub_inn">
+                                        <strong>학과안내</strong>
+                                        <div class="sub_wrap">
+                                            <dl class="sub">
+                                                <dt>인문사회계열</dt>
+                                                <dd><a href="">유아교육과(3년제)</a></dd>
+                                                <dd><a href="">SNS마케팅과</a></dd>
+                                                <dd><a href="">호텔항공외식관광학부</a></dd>
+                                                <dd><a href="">세무회계정보과</a></dd>
+                                                <dd><a href="">사회복지상담과</a></dd>
+                                                <dd><a href="">경찰행정과</a></dd>
+                                                <dd><a href="">한국어문화과</a></dd>
+                                                <dd><a href="">보건행정과(3년제)</a></dd>
+                                                <dd><a href="">금융부동산과</a></dd>
+                                                <dd><a href="">해외서비스경영과</a></dd>
+                                                <dd><a href="">국제협력선교과</a></dd>
+                                            </dl>
+                                            <dl class="sub">
+                                                <dt>자연과학계열</dt>
+                                                <dd><a href="">식품영양조리학부</a></dd>
+                                                <dd><a href="">제과제빵과</a></dd>
+                                                <dd><a href="">플라워가드닝과</a></dd>
+                                                <dd><a href="">간호학과(4년제)</a></dd>
+                                                <dd><a href="">언어치료과(3년제)</a></dd>
+                                                <dd><a href="">반려동물보건과</a></dd>
+                                                <dd><a href="">펫토탈케어과</a></dd>
+                                                <dd><a href="">의료재활과(3년제)</a></dd>
+                                            </dl>
+                                            <dl class="sub">
+                                                <dt>공학계열</dt>
+                                                <dd><a href="">건축인테리어과</a></dd>
+                                                <dd><a href="">소방환경안전과</a></dd>
+                                                <dd><a href="">스마트환경과</a></dd>
+                                                <dd><a href="">컴퓨터과</a></dd>
+                                                <dd><a href="">디지털융합과</a></dd>
+                                                <dd><a href="">기계과</a></dd>
+                                                <dd><a href="">의료기기과</a></dd>
+                                            </dl>
+                                            <dl class="sub">
+                                                <dt>예체능계열</dt>
+                                                <dd><a href="">패션디자인&middot;쇼핑몰과</a></dd>
+                                                <dd><a href="">디자인학부</a></dd>
+                                                <dd><a href="">시각디자인과</a></dd>
+                                                <dd><a href="">생활체육학부</a></dd>
+                                                <dd><a href="">태권도시범공연과</a></dd>
+                                                <dd><a href="">공연음악학부</a></dd>
+                                                <dd><a href="">영상&middot;애니메이션학부</a></dd>
+                                                <dd><a href="">웹툰과</a></dd>
+                                                <dd><a href="">헤어디자인과</a></dd>
+                                                <dd><a href="">뷰티크리에이터학부</a></dd>
+                                                <dd><a href="">뷰티스킨테라피과</a></dd>
+                                                <dd><a href="">네일아트디자인과</a></dd>
+                                                <dd><a href="">기업브랜드학부(오무선뷰티전공)</a></dd>
+                                                <dd><a href="">골프&middot;피트니스과</a></dd>
+                                            </dl>
+                                            <dl class="sub">
+                                                <dt>산업체위탁교육</dt>
+                                                <dd><a href="">경영학부(기업경영전공)</a></dd>
+                                                <dd><a href="">세무회계정보과</a></dd>
+                                                <dd><a href="">사회복지상담과</a></dd>
+                                            </dl>
+                                            <dl class="sub">
+                                                <dt>4년제 학사학위과정</dt>
+                                                <dd><a href="">유아교육학과</a></dd>
+                                                <dd><a href="">호텔항공외식관광학과</a></dd>
+                                                <dd><a href="">사회복지상담학과</a></dd>
+                                                <dd><a href="">경찰행정학과</a></dd>
+                                                <dd><a href="">보건행정학과</a></dd>
+                                                <dd><a href="">식품영양조리학과</a></dd>
+                                                <dd><a href="">생활체육학과</a></dd>
+                                                <dd><a href="">건축인테리어학과</a></dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><span>대학생활</span>
+                                <div class="sub_box">
+                                    <div class="inner sub_inn">
+                                        <strong>대학생활</strong>
+                                        <div class="sub_wrap">
+                                            <dl class="sub">
+                                                <dt>학사일정안내</dt>
+                                                <dd><a href="">학칙</a></dd>
+                                                <dd><a href="">학사일정</a></dd>
+                                                <dd><a href="">등록안내</a></dd>
+                                                <dd><a href="">병무안내</a></dd>
+                                                <dd><a href="">서식자료실</a></dd>
+                                                <dd><a href="">대학요람</a></dd>
+                                            </dl>
+                                            <dl class="sub">
+                                                <dt>학사안내</dt>
+                                                <dd><a href="">채플</a></dd>
+                                                <dd><a href="">휴학</a></dd>
+                                                <dd><a href="">복학</a></dd>
+                                                <dd><a href="">자퇴</a></dd>
+                                                <dd><a href="">졸업</a></dd>
+                                                <dd><a href="">전과</a></dd>
+                                                <dd><a href="">재입학</a></dd>
+                                                <dd><a href="">재수강</a></dd>
+                                                <dd><a href="">학적부정정</a></dd>
+                                                <dd><a href="">수강신청</a></dd>
+                                                <dd><a href="">수업시간</a></dd>
+                                                <dd><a href="">학점인정</a></dd>
+                                                <dd><a href="">성적평가</a></dd>
+                                                <dd><a href="">계절수업</a></dd>
+                                                <dd><a href="">사회봉사이수</a></dd>
+                                                <dd><a href="">연계편입학</a></dd>
+                                                <dd><a href="">현장실습</a></dd>
+                                                <dd><a href="">교양교육</a></dd>
+                                            </dl>
+                                            <dl class="sub">
+                                                <dt>장학 &#47; 학자금</dt>
+                                                <dd><a href="">장학금</a></dd>
+                                                <dd><a href="">비슬상</a></dd>
+                                                <dd><a href="">계명문화대상</a></dd>
+                                                <dd><a href="">학자금안내</a></dd>
+                                            </dl>
+                                            <dl class="sub">
+                                                <dt>4년제 학사학위과정</dt>
+                                                <dd><a href="">학사학위과정 안내</a></dd>
+                                                <dd><a href="">입시요강</a></dd>
+                                                <dd><a href="">관련서식</a></dd>
+                                                <dd><a href="">자주하는 질문</a></dd>
+                                                <dd><a href="">질문하기</a></dd>
+                                            </dl>
+                                            <dl class="sub">
+                                                <dt>증명서발급</dt>
+                                                <dd><a href="">제증명서</a></dd>
+                                                <dd><a href="">학생증</a></dd>
+                                                <dd><a href="">교원자격증</a></dd>
+                                            </dl>
+                                            <dl class="sub">
+                                                <dt>학생복지 &#47; 상담</dt>
+                                                <dd><a href="">스쿨버스</a></dd>
+                                                <dd><a href="">기숙사</a></dd>
+                                                <dd><a href="">주차안내</a></dd>
+                                                <dd><a href="">식당메뉴</a></dd>
+                                                <dd><a href="">편의시설</a></dd>
+                                                <dd><a href="">의료혜택</a></dd>
+                                                <dd><a href="">학생보험</a></dd>
+                                                <dd><a href="">학생성공·상담센터</a></dd>
+                                                <dd><a href="">장애학생지원센터</a></dd>
+                                                <dd><a href="">안전관리</a></dd>
+                                                <dd><a href="">구글(G-Suite)</a></dd>
+                                                <dd><a href="">오피스365</a></dd>
+                                                <dd><a href="">무선인터넷서비스</a></dd>
+                                            </dl>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><span>문화리더</span>
+                                <div class="sub_box">
+                                    <div class="inner sub_inn">
+                                        <strong>문화리더</strong>
+                                        <div class="sub_wrap">
+                                            <dl class="sub">
+                                                <dt>글로벌문화프로그램</dt>
+                                                <dd><a href="">외국대학복수학위</a></dd>
+                                                <dd><a href="">해외인턴쉽</a></dd>
+                                                <dd><a href="">국제교류 </a></dd>
+                                                <dd><a href="">어학교육</a></dd>
+                                            </dl>
+                                            <dl class="sub">
+                                                <dt>체험문화프로그램</dt>
+                                                <dd><a href="">국외봉사</a></dd>
+                                                <dd><a href="">국토순례대행진</a></dd>
+                                                <dd><a href="">체험연수</a></dd>
+                                                <dd><a href="">비슬축제</a></dd>
+                                            </dl>
+                                            <dl class="sub">
+                                                <dt>비슬미디어</dt>
+                                                <dd><a href="">대학소식지</a></dd>
+                                                <dd><a href="">대학신문(계명춘추)</a></dd>
+                                                <dd><a href="">계명춘추 포토갤러리</a></dd>
+                                                <dd><a href="">현장실습 수기모음집</a></dd>
+                                                <dd><a href="">LINC 수기모음집</a></dd>
+                                                <dd><a href="">현장실습 브이로그</a></dd>
+                                            </dl>
+                                            <dl class="sub">
+                                                <dt>참여이야기</dt>
+                                                <dd><a href="">체험수기작성</a></dd>
+                                                <dd><a href="">포토갤러리</a></dd>
+                                                <dd><a href="">UCC 영상 공모전</a></dd>
+                                            </dl>
+                                            <dl class="sub">
+                                                <dt>학생자치기구</dt>
+                                                <dd><a href="">온라인 선거 투표</a></dd>
+                                                <dd><a href="">총학생회</a></dd>
+                                                <dd><a href="">대의원회</a></dd>
+                                                <dd><a href="">동아리연합회</a></dd>
+                                                <dd><a href="">계명춘추사</a></dd>
+                                                <dd><a href="">교육방송국</a></dd>
+                                                <dd><a href="">비슬편집국</a></dd>
+                                            </dl>
+                                            <dl class="sub">
+                                                <dt>전시공연</dt>
+                                                <dd><a href="">유물전시실</a></dd>
+                                            </dl>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><span>문화광장</span>
+                                <div class="sub_box">
+                                    <div class="inner sub_inn">
+                                        <strong>문화광장</strong>
+                                        <div class="sub_wrap">
+                                            <dl class="sub">
+                                                <dt>온라인민원실</dt>
+                                                <dd><a href="">자주하는 질문</a></dd>
+                                                <dd><a href="">질문하기</a></dd>
+                                                <dd><a href="">정책 건의사항</a></dd>
+                                                <dd><a href="">온라인원격지원</a></dd>
+                                                <dd><a href="">행정서비스이행헌장</a></dd>
+                                                <dd><a href="">청탁금지법</a></dd>
+                                            </dl>
+                                            <dl class="sub">
+                                                <dt>참여게시판</dt>
+                                                <dd><a href="">서비스콜센터</a></dd>
+                                                <dd><a href="">설문조사</a></dd>
+                                                <dd><a href="">이벤트게시판</a></dd>
+                                                <dd><a href="">칭찬합시다</a></dd>
+                                                <dd><a href="">인터넷장터</a></dd>
+                                                <dd><a href="">분실물/습득물</a></dd>
+                                            </dl>
+                                            <dl class="sub">
+                                                <dt>상담센터</dt>
+                                                <dd><a href="">인권 침해 신고</a></dd>
+                                                <dd><a href="">무엇이든물어보세요</a></dd>
+                                                <dd><a href="">학생성공상담센터</a></dd>
+                                            </dl>
+                                            <dl class="sub">
+                                                <dt>자유학기제진로지원센터</dt>
+                                                <dd><a href="">자유학기제진로지원센터</a></dd>
+                                            </dl>
+                                            <dl class="sub">
+                                                <dt>공지사항</dt>
+                                                <dd><a href="">공지사항</a></dd>
+                                            </dl>
+                                            <dl class="sub">
+                                                <dt>인권센터</dt>
+                                                <dd><a href="">인권센터</a></dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><span>입학안내</span></li>
+                            <li><span>교목실</span></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="ham_btn">
+                <span class="material-symbols-outlined">iframe</span>
+            </div>
+        </header>
         <main>
             <!-- visual -->
             <section class="main_vi">
-                <div id="bgndVideo" class="player">
-                    <h2 class="blind">kmcu main video</h2>
+                <div class="main_slide">
+                    <div class="itm itm01">
+                        <div class="inner slogan">
+                            <h3>KEIMYUNG COLLEGE <br /> UNIVERSITY</h3>
+                            <strong>2022년 고등직업교육거점지구사업(HiVE) 선정</strong>
+                            <span>2022년 전문대학 기관평가인증</span>
+                        </div>
+                    </div>
+                    <div class="itm itm02">
+                        <div class="inner slogan">
+                            <h3>KEIMYUNG COLLEGE <br /> UNIVERSITY</h3>
+                            <strong>2022년 3단계 산학연협력 선도전문대학 육성사업(LINC 3.0) 선정</strong>
+                            <span>5년 연속 파란사다리사업 선정(2019년 ~ 2023년)</span>
+                        </div>
+                    </div>
+                    <div class="itm itm03">
+                        <div class="inner slogan">
+                            <h3>KEIMYUNG COLLEGE <br /> UNIVERSITY</h3>
+                            <strong>2022년 대학일자리플러스센터 사업 선정</strong>
+                            <span>신사업창업사관학교 선정 및 창업교육 혁신 선도대학 선정</span>
+                        </div>
+                    </div>
                 </div>
+                <ul class="menu">
+                    <li>
+                        <a href="#slide1">01</a>
+                    </li>
+                    <li>
+                        <a href="#slide2">02</a>
+                    </li>
+                    <li>
+                        <a href="#slide3">03</a>
+                    </li>
+                </ul>
             </section>
             <!-- quick menu -->
-            <section class="main_qui">
+            <section class="main_qui _sec">
                 <div class="tit">
                     <h2>QUICK MENU</h2>
                 </div>
-                <div class="qui_top">
-                    <ul>
-                        <li>
-                            <span class="material-symbols-outlined">iframe</span>
-                            <strong>통합정보시스템</strong>
-                        </li>
-                        <li>
-                            <span class="material-symbols-outlined">view_in_ar</span>
-                            <strong>KHUB 큐브포털</strong>
-                        </li>
-                        <li>
-                            <span class="material-symbols-outlined">person_pin</span>
-                            <strong>비디오 &#47; 화보</strong>
-                        </li>
-                        <li>
-                            <span class="material-symbols-outlined">photo_frame</span>
-                            <strong>전자계명춘추</strong>
-                        </li>
-                        <li>
-                            <span class="material-symbols-outlined">thumb_up</span>
-                            <strong>칭찬 합시다</strong>
-                        </li>
-                        <li>
-                            <span class="material-symbols-outlined">vrpano</span>
-                            <strong>캠퍼스 VR투어</strong>
-                        </li>
-                        <li>
-                            <span class="material-symbols-outlined">add_to_queue</span>
-                            <strong>일자리플러스센터</strong>
-                        </li>
-                    </ul>
-                </div>
-                <div class="qui_bott">
-                    <ul>
-                        <li>
-                            <span class="material-symbols-outlined">mark_as_unread</span>
-                            <strong>전자문서시스템</strong>
-                        </li>
-                        <li>
-                            <span class="material-symbols-outlined">keyboard_onscreen</span>
-                            <strong>학습관리시스템</strong>
-                        </li>
-                        <li>
-                            <span class="material-symbols-outlined">newsmode</span>
-                            <strong>역량포털시스템</strong>
-                        </li>
-                        <li>
-                            <span class="material-symbols-outlined">mail</span>
-                            <strong>웹메일(교직원)</strong>
-                        </li>
-                        <li>
-                            <span class="material-symbols-outlined">badge</span>
-                            <strong>전자출결시스템</strong>
-                        </li>
-                        <li>
-                            <span class="material-symbols-outlined">news</span>
-                            <strong>증명서발급</strong>
-                        </li>
-                        <li>
-                            <span class="material-symbols-outlined">globe_asia</span>
-                            <strong>국제처</strong>
-                        </li>
-                        <li>
-                            <span class="material-symbols-outlined">account_balance</span>
-                            <strong>도서관</strong>
-                        </li>
-                        <li>
-                            <span class="material-symbols-outlined">draw</span>
-                            <strong>평생교육원</strong>
-                        </li>
-                        <li>
-                            <span class="material-symbols-outlined">clinical_notes</span>
-                            <strong>HiVE사업단</strong>
-                        </li>
-                        <li>
-                            <span class="material-symbols-outlined">handshake</span>
-                            <strong>산학협력단</strong>
-                        </li>
-                        <li>
-                            <span class="material-symbols-outlined">clinical_notes</span>
-                            <strong>LINC3.0사업단</strong>
-                        </li>
-                        <li>
-                            <span class="material-symbols-outlined">savings</span>
-                            <strong>발전기금</strong>
-                        </li>
-                        <li>
-                            <span class="material-symbols-outlined">volunteer_activism</span>
-                            <strong>1퍼센트 사랑의 손길</strong>
-                        </li>
-                        <li>
-                            <span class="material-symbols-outlined">diversity_1</span>
-                            <strong>인권센터</strong>
-                        </li>
-                        <li>
-                            <span class="material-symbols-outlined">groups</span>
-                            <strong>학생성공·상담센터</strong>
-                        </li>
-                    </ul>
+                <div class="inner">
+                    <div class="qui_top">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span class="material-symbols-outlined">iframe</span>
+                                    <strong>통합정보시스템</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="material-symbols-outlined">view_in_ar</span>
+                                    <strong>KHUB 큐브포털</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="material-symbols-outlined">person_pin</span>
+                                    <strong>비디오 &#47; 화보</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="material-symbols-outlined">photo_frame</span>
+                                    <strong>전자계명춘추</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="material-symbols-outlined">thumb_up</span>
+                                    <strong>칭찬 합시다</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="material-symbols-outlined">vrpano</span>
+                                    <strong>캠퍼스 VR투어</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="material-symbols-outlined">add_to_queue</span>
+                                    <strong>일자리플러스센터</strong>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="qui_bott">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span class="material-symbols-outlined">mark_as_unread</span>
+                                    <strong>전자문서시스템</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="material-symbols-outlined">keyboard_onscreen</span>
+                                    <strong>학습관리시스템</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="material-symbols-outlined">newsmode</span>
+                                    <strong>역량포털시스템</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="material-symbols-outlined">mail</span>
+                                    <strong>웹메일(교직원)</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="material-symbols-outlined">badge</span>
+                                    <strong>전자출결시스템</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="material-symbols-outlined">news</span>
+                                    <strong>증명서발급</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="material-symbols-outlined">globe_asia</span>
+                                    <strong>국제처</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="material-symbols-outlined">account_balance</span>
+                                    <strong>도서관</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="material-symbols-outlined">draw</span>
+                                    <strong>평생교육원</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="material-symbols-outlined">clinical_notes</span>
+                                    <strong>HiVE사업단</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="material-symbols-outlined">handshake</span>
+                                    <strong>산학협력단</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="material-symbols-outlined">clinical_notes</span>
+                                    <strong>LINC3.0사업단</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="material-symbols-outlined">savings</span>
+                                    <strong>발전기금</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="material-symbols-outlined">volunteer_activism</span>
+                                    <strong>1퍼센트 사랑의 손길</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="material-symbols-outlined">diversity_1</span>
+                                    <strong>인권센터</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="material-symbols-outlined">groups</span>
+                                    <strong>학생성공·상담센터</strong>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
-            <!-- popup, notice zone 배너 일러 때매 마지막에 처리하자-->
-            <section class="main_zone">
-                <div class="pop_zone">
-                    <div class="pop_top">
-                        <div class="pop_top_slide swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide itm itm01">
-                                    <strong>학생고민상담안내</strong>
-                                    <span>마음의 고민을 함게 나눕니다.</span>
+            <!-- popup, notice zone -->
+            <section class="main_zone _sec bg_g">
+                <div class="inner">
+                    <div class="zone_wrap">
+                        <div class="pop_zone">
+                            <div class="tit">
+                                <h2>POPUP-ZONE</h2>
+                            </div>
+                            <div class="pop_slide">
+                                <figure>
                                     <a href="">
-                                        <span class="material-symbols-outlined">navigate_next</span>
+                                        <img src="./images/pop_bott01.jpg" alt="">
                                     </a>
+                                </figure>
+                                <figure>
+                                    <a href="">
+                                        <img src="./images/pop_bott02.jpg" alt="">
+                                    </a>
+                                </figure>
+                                <figure>
+                                    <a href="">
+                                        <img src="./images/pop_bott03.jpg" alt="">
+                                    </a>
+                                </figure>
+                                <figure>
+                                    <a href="">
+                                        <img src="./images/pop_bott04.jpg" alt="">
+                                    </a>
+                                </figure>
+                                <figure>
+                                    <a href="">
+                                        <img src="./images/pop_bott05.jpg" alt="">
+                                    </a>
+                                </figure>
+                                <figure>
+                                    <a href="">
+                                        <img src="./images/pop_bott06.jpg" alt="">
+                                    </a>
+                                </figure>
+                                <figure>
+                                    <a href="">
+                                        <img src="./images/pop_bott07.jpg" alt="">
+                                    </a>
+                                </figure>
+                                <figure>
+                                    <a href="">
+                                        <img src="./images/pop_bott09.jpg" alt="">
+                                    </a>
+                                </figure>
+                                <figure>
+                                    <a href="">
+                                        <img src="./images/pop_bott10.jpg" alt="">
+                                    </a>
+                                </figure>
+                                <figure>
+                                    <a href="">
+                                        <img src="./images/pop_bott08.jpg" alt="">
+                                    </a>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="noti_zone">
+                            <div class="noti">
+                                <div class="tit">
+                                    <h2>NOTICE</h2>
                                 </div>
-                                <div class="swiper-slide itm itm02">
-                                    <p>자원봉사활동 정보가 필요하시면</p>
-                                    <strong>대구광역시자원봉사센터</strong>
-                                    <span>dgvolunteer.co.kr</span>
-                                    <a href="">
-                                        <span class="material-symbols-outlined">navigate_next</span>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide itm itm03">
-                                    <strong>육군 간부 모집</strong>
-                                    <span>Republic or Korea Army</span>
-                                    <a href="">
-                                        <span class="material-symbols-outlined">navigate_next</span>
-                                    </a>
+                                <div class="notice">
+                                    <ul class="tap_menu">
+                                        <li class="on">전체</li>
+                                        <li>공지</li>
+                                        <li>학사</li>
+                                        <li>장학</li>
+                                        <li>언론</li>
+                                        <li>입찰</li>
+                                        <li>모집</li>
+                                        <li>취업</li>
+                                    </ul>
+                                    <div class="con_wrap">
+                                        <div class="con on">
+
+                                        </div>
+                                        <div class="con">
+
+
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="btn_wrap">
-                            <div class="arrows">
-                                <div class="swiper-button-prev">
-                                    <span class="material-symbols-outlined left">arrow_left_alt</span>
-                                </div>
-                                <div class="swiper-button-next">
-                                    <span class="material-symbols-outlined right">arrow_right_alt</span>
-                                </div>
-                            </div>
-                            <div class="slide_num">
-                                <span>01</span> / <strong>09</strong>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pop_bott_slide">
-                        <figure>
-                            <img src="./images/pop_bott01.jpg" alt="2023학년도 9월 강사 신규 2차 채용 공고">
-                        </figure>
-                        <figure>
-                            <img src="./images/pop_bott02.jpg" alt="국제협력기술선교과 초빙교원 채용 공고">
-                        </figure>
-                        <figure>
-                            <img src="./images/pop_bott03.jpg" alt="학생성공 상담센터">
-                        </figure>
-                        <figure>
-                            <img src="./images/pop_bott04.jpg" alt="계명헬스피아 현장관리(계약직)직원 신규채용 공고">
-                        </figure>
-                        <figure>
-                            <img src="./images/pop_bott05.jpg" alt="구글(G-Suite)클라우드 서비스 이용안내">
-                        </figure>
-                        <figure>
-                            <img src="./images/pop_bott06.jpg" alt="2023학년도 온앤오프 취업 컨설팅 신청안내">
-                        </figure>
-                        <figure>
-                            <img src="./images/pop_bott07.jpg" alt="정신건강 자가검진 이용안내">
-                        </figure>
-                        <figure>
-                            <img src="./images/pop_bott08.jpg" alt="디지털 성범죄 피해자 지원센터 02-735-8994">
-                        </figure>
-                        <figure>
-                            <img src="./images/pop_bott09.jpg" alt="개인정보 처리사례 FAQ">
-                        </figure>
-                        <figure>
-                            <img src="./images/pop_bott10.jpg" alt="계명헬스피아 현장관리(계약직)직원 신규채용 공고">
-                        </figure>
                     </div>
                 </div>
-                <div class="noti_zone"></div>
+            </section>
+            <!-- department -->
+            <section class="main_depe">
+                <div class="tit">
+                    <h2 class="blind">학과소개</h2>
+                </div>
+                <ul class="inner">
+                    <li class="itm01">
+                        <div class="txt_box">
+                            <strong>인문사회계열</strong>
+                            <span>Humanities and Social Sciences</span>
+                            <p>세상과 소통하는 법, 그리고 시대를 앞서가는 글로벌 인재를 양성합니다.</p>
+                            <a href=""><span class="material-symbols-outlined">add</span></a>
+                        </div>
+                    </li>
+                    <li class="itm02">
+                        <div class="txt_box">
+                            <strong>자연과학계열</strong>
+                            <span>Naturalscience</span>
+                            <p>첨단 연구를 선도하여 미래기술의 희망을 싹틔웁니다.</p>
+                            <a href=""><span class="material-symbols-outlined">add</span></a>
+                        </div>
+                    </li>
+                    <li class="itm03">
+                        <div class="txt_box">
+                            <strong>공학계열</strong>
+                            <span>Engineering</span>
+                            <p>건전한 정신과 진취적인 역량을 갖춘 글로벌 엔지니어를 양성합니다.</p>
+                            <a href=""><span class="material-symbols-outlined">add</span></a>
+                        </div>
+                    </li>
+                    <li class="itm04">
+                        <div class="txt_box">
+                            <strong>예체능계열</strong>
+                            <span>Arts and Physical Education</span>
+                            <p>예술 환경의 변화에 대처할 수 있는 전문 예술인과 체육인을 양성 합니다.</p>
+                            <a href=""><span class="material-symbols-outlined">add</span></a>
+                        </div>
+                    </li>
+                </ul>
             </section>
         </main>
         <footer class="footer">
@@ -217,25 +756,82 @@
                     <div class="inner f_top_wrap">
                         <div class="left">
                             <a href="">
-                                <img src="./images/logo.png" alt="계명문화대학교">
+                                <img src="./images/logo_w.png" alt="계명문화대학교">
                             </a>
                         </div>
                         <div class="right">
                             <div class="family_site">
-                                <!-- department site -->
-                                <div class="dep">
-                                    <button>학과 홈페이지</button>
-                                    <span class="material-symbols-outlined">add</span>
+                                <div class="site">
+                                    <strong>학과 홈페이지<span class="material-symbols-outlined add">add</span></strong>
                                     <ul>
-                                        <li><a href=""></a></li>
+                                        <li><a href="" target="_blank">AI드론&middot;전자과</a></li>
+                                        <li><a href="" target="_blank">SNS마케팅과</a></li>
+                                        <li><a href="" target="_blank">간호학과</a></li>
+                                        <li><a href="" target="_blank">건축인테리어과</a></li>
+                                        <li><a href="" target="_blank">경찰행정과</a></li>
+                                        <li><a href="" target="_blank">골프&middot;피트니스과</a></li>
+                                        <li><a href="" target="_blank">공연음악학부</a></li>
+                                        <li><a href="" target="_blank">국제협력선교과</a></li>
+                                        <li><a href="" target="_blank">금융부동산과</a></li>
+                                        <li><a href="" target="_blank">기계과</a></li>
+                                        <li><a href="" target="_blank">기업브랜드학부</a></li>
+                                        <li><a href="" target="_blank">네일아트디자인과</a></li>
+                                        <li><a href="" target="_blank">드론미디어과</a></li>
+                                        <li><a href="" target="_blank">디자인학부</a></li>
+                                        <li><a href="" target="_blank">디지털융합과</a></li>
+                                        <li><a href="" target="_blank">반려동물보건과</a></li>
+                                        <li><a href="" target="_blank">보건행정과</a></li>
+                                        <li><a href="" target="_blank">뷰티스킨테라피과</a></li>
+                                        <li><a href="" target="_blank">사회복지상담과</a></li>
+                                        <li><a href="" target="_blank">생활체육학부</a></li>
+                                        <li><a href="" target="_blank">세무회계정보과</a></li>
+                                        <li><a href="" target="_blank">소방환경안전과</a></li>
+                                        <li><a href="" target="_blank">스마트환경과</a></li>
+                                        <li><a href="" target="_blank">시각디자인과</a></li>
+                                        <li><a href="" target="_blank">식품영양조리학부</a></li>
+                                        <li><a href="" target="_blank">언어치료과</a></li>
+                                        <li><a href="" target="_blank">영상&middot;애니메이션학부</a></li>
+                                        <li><a href="" target="_blank">웹툰과</a></li>
+                                        <li><a href="" target="_blank">유아교육과</a></li>
+                                        <li><a href="" target="_blank">의료기기과</a></li>
+                                        <li><a href="" target="_blank">의료재활과</a></li>
+                                        <li><a href="" target="_blank">웰빙푸드조리과</a></li>
+                                        <li><a href="" target="_blank">제과제빵과</a></li>
+                                        <li><a href="" target="_blank">커피문화산업과</a></li>
+                                        <li><a href="" target="_blank">컴퓨터과</a></li>
+                                        <li><a href="" target="_blank">태권도시범공연과</a></li>
+                                        <li><a href="" target="_blank">패션디자인&middot;쇼핑몰과</a></li>
+                                        <li><a href="" target="_blank">패션쇼핑몰창업과</a></li>
+                                        <li><a href="" target="_blank">펫토탈케어과</a></li>
+                                        <li><a href="" target="_blank">플라워·가드닝과</a></li>
+                                        <li><a href="" target="_blank">한국어문화과</a></li>
+                                        <li><a href="" target="_blank">해외서비스경영과</a></li>
+                                        <li><a href="" target="_blank">헤어디자인과</a></li>
+                                        <li><a href="" target="_blank">호텔항공외식관광학부</a></li>
                                     </ul>
                                 </div>
-                                <!-- college site -->
-                                <div class="coll">
-                                    <button>교내 홈페이지</button>
-                                    <span class="material-symbols-outlined">add</span>
+                                <div class="site">
+                                    <strong>교내 홈페이지<span class="material-symbols-outlined add">add</span></strong>
                                     <ul>
-                                        <li><a href=""></a></li>
+                                        <li><a href="" target="_blank">도서관</a></li>
+                                        <li><a href="" target="_blank">국제처</a></li>
+                                        <li><a href="" target="_blank">산학협력단</a></li>
+                                        <li><a href="" target="_blank">LINC3.0사업단</a></li>
+                                        <li><a href="" target="_blank">평생교육원</a></li>
+                                        <li><a href="" target="_blank">HiVE사업단</a></li>
+                                        <li><a href="" target="_blank">부설어린이집</a></li>
+                                        <li><a href="" target="_blank">학습관리시스템</a></li>
+                                        <li><a href="" target="_blank">계명대학교</a></li>
+                                        <li><a href="" target="_blank">동산의료원</a></li>
+                                        <li><a href="" target="_blank">창업보육센터</a></li>
+                                        <li><a href="" target="_blank">1퍼센트 사랑의 손길</a></li>
+                                        <li><a href="" target="_blank">발전기금</a></li>
+                                        <li><a href="" target="_blank">교수학습지원센터</a></li>
+                                        <li><a href="" target="_blank">전문대학혁신지원사업</a></li>
+                                        <li><a href="" target="_blank">교목실</a></li>
+                                        <li><a href="" target="_blank">취&middot;창업지원센터</a></li>
+                                        <li><a href="" target="_blank">인권센터</a></li>
+                                        <li><a href="" target="_blank">유물전시실</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -262,15 +858,11 @@
                         </ul>
                         <div class="info">
                             <div class="addr">
+                                <a href="TEL: 053-589-7744" class="st">TEL: 053-589-7744</a>
                                 <span>(우)42601 대구광역시 달서구 달서대로 675 계명문화대학교</span>
                                 <small>&copy; BY KEIMYUNG COLLEGE UNIVERSITY. ALL RIGHTS RESERVED.</small>
                             </div>
                             <div class="right">
-                                <ul class="call">
-                                    <li><a href="TEL: 053-589-7744">TEL: 053-589-7744</a></li>
-                                    <li><a href="">인권 침해 신고</a></li>
-                                    <li><a href="">무엇이든 물어보세요</a></li>
-                                </ul>
                                 <ul class="sns">
                                     <li><a href=""><i class="bi bi-apple"></i></a></li>
                                     <li><a href=""><i class="bi bi-google-play"></i></a></li>
