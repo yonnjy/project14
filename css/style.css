@@ -13,11 +13,12 @@
     position: absolute;
     top: 62rem;
     right: 24rem;
+    cursor: pointer;
+    user-select: none;
 }
 
 .header .ham_btn span {
     font-size: 32rem;
-    color: red;
 }
 
 .header .h_top {
@@ -309,7 +310,7 @@
         font-size: 20rem;
     }
 
-    
+
 
     .header .h_bott {
         border-bottom: 1px solid #ddd;
@@ -330,11 +331,16 @@
     .header .gnb {
         position: fixed;
         top: 120rem;
-        left: -100%;
+        left: -150%;
         padding: 0 0 0 24rem;
         background: #fff;
         width: 100%;
         height: calc(100vh - 120rem);
+    }
+
+
+    .header .gnb.on {
+        left: 0;
     }
 
     .header .gnb ul {
@@ -376,11 +382,10 @@
         top: 0;
         left: 120rem;
         background: #ddd;
-        width: 200rem;
-        height: calc(100vh - 120rem);
+        width: 65%;
+        height: calc(100vh - 160rem);
         padding: 24rem 0;
         overflow-y: scroll;
-        touch-action: pan-y;
     }
 
     .header .gnb li.on .sub_box {
@@ -706,14 +711,142 @@
     margin-left: 10rem;
 }
 
-.main_zone .slick-dots>li.slick-active button {}
+.main_zone .slick-dots>li.slick-active button {
+    color: #B80101;
+}
 
 .main_zone .notice .tap_menu {
     display: flex;
     gap: 30rem;
-    border-bottom: 1px solid red;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 16rem 0;
+    margin: 0 0 16rem 0;
+    border-bottom: 1px solid #ddd;
 }
 
+.main_zone .notice .tap_menu li {
+    position: relative;
+    cursor: pointer;
+}
+
+.main_zone .notice .tap_menu li:hover {
+    color: #B80101;
+}
+
+.main_zone .notice .tap_menu li~li::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -20rem;
+    transform: translate(0, -50%);
+    width: 1px;
+    height: 10rem;
+    background: #eee;
+}
+
+.main_zone .notice .tap_menu span {
+    font-size: 18rem;
+}
+
+/* aa */
+
+.main_zone .con_list .con_t {
+    margin: 0 0 15px 0;
+}
+
+.main_zone .con_t li {
+    position: relative;
+    padding: 20px 0 20px 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+.main_zone .menu_list li:hover {
+    color: #00a664;
+}
+
+.main_zone .con_t strong {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    padding: 10px 30px 12px;
+    color: #fff;
+    background: #B80101;
+    border-radius: 0 0 0 20rem;
+}
+
+.main_zone .con_t li~li {
+    margin: 5px 0 0 0;
+}
+
+.main_zone .con_t p {
+    font-weight: 500;
+    margin: 0 0 5px 0;
+}
+
+.main_zone .con_t span {
+    font-size: 12px;
+}
+
+.main_zone .con_b li~li {
+    margin: 10px 0 0 0;
+}
+
+.main_zone .con_b li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_zone .con_b li:hover p {
+    color: #B80101;
+}
+
+.main_zone .con_b strong {
+    position: relative;
+    margin: 0 15px 0 0;
+    font-size: 13px;
+    color: #777;
+}
+
+.main_zone .con_b strong::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -9px;
+    width: 1px;
+    height: 10px;
+    background: #ddd;
+}
+
+.main_zone .con_b p {
+    font-size: 15px;
+}
+
+.main_zone .con_b span {
+    font-size: 13px;
+    margin: 0 0 0 auto;
+}
+
+.main_zone .con_list .con {
+    display: none;
+}
+
+.main_zone .con_list .con.on {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .main_zone .zone_wrap {
+        flex-direction: column;
+    }
+
+    .main_zone .noti_zone {
+        padding: 80rem 0 0 0;
+    }
+}
 
 
 
@@ -931,6 +1064,7 @@
     color: #000;
     background: #fff;
     width: 176rem;
+    overflow-y: scroll;
     height: 180rem;
     border-top: 1px solid #888;
     border-left: 1px solid #888;
