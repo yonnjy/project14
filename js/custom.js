@@ -15,7 +15,7 @@ $(function () {
     });
 
     $('.header .ham_btn').on('click', function () {
-        $('.gnb').addClass('on');
+        $('.gnb').toggleClass('on');
     });
 
     $('.header .gnb>ul>li>span').on('click', function (e) {
@@ -38,7 +38,7 @@ $(function () {
 
     $('.main_vi .menu li').on('click', function (e) {
         e.preventDefault();
-        const idx = $(this).index(); // 0 1 2
+        const idx = $(this).index();
         $('.main_slide').slick('slickGoTo', idx);
     });
 
@@ -55,7 +55,7 @@ $(function () {
     $('.pop_slide').slick({
         arrows: false,
         dots: true,
-        // autoplay: true,
+        autoplay: true,
         infinite: true,
         slidesToShow: 2,
         slidesToScroll: 2,
@@ -70,15 +70,14 @@ $(function () {
         ]
     });
 
-    // 여기
-    $('.notic_menu .menu_list li').on('click', function (event) {
-        event.preventDefault();
+    $('.notice .tap_menu li').on('click', function (e) {
+        e.preventDefault();
 
         let idx = $(this).index();
         $(this).addClass('on')
             .siblings().removeClass('on');
 
-        $('.notic_menu .con_list .con').eq(idx).addClass('on')
+        $('.notice .con_list .con').eq(idx).addClass('on')
             .siblings().removeClass('on');
     });
 
